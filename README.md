@@ -7,12 +7,12 @@ Aluno 2: João Paulo Bertagia / RGM:37298135
 
 Exercícios:
 
-1. Validador de Senhas Fortes
-2. Tabuada Completa com Laço
-3. Cálculo de Fatorial com while
-4. Conversor de Temperaturas com Menu
-5. Verificador de Palíndromos
-7. Soma de Números Pares de um Array
-8. Cálculo de IMC com Classificação
-9. Jogo da Adivinhação
-10. Lista de Tarefas (To-Do List)
+1. Validador de Senhas Fortes<br>
+2. Tabuada Completa com Laço<br>
+3. Cálculo de Fatorial com while<br>
+4. Conversor de Temperaturas com Menu<br>
+5. Verificador de Palíndromos<br>
+7. Soma de Números Pares de um Array<br>
+8. Cálculo de IMC com Classificação<br>
+9. Jogo da Adivinhação<br>
+10. Lista de Tarefas (To-Do List)<br>

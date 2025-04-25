@@ -12,6 +12,7 @@ Exercícios:
 3. Cálculo de Fatorial com while<br>
 4. Conversor de Temperaturas com Menu<br>
 5. Verificador de Palíndromos<br>
+6. Cadastro Simples de Produtos<br>
 7. Soma de Números Pares de um Array<br>
 8. Cálculo de IMC com Classificação<br>
 9. Jogo da Adivinhação<br>

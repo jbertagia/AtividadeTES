@@ -2,6 +2,7 @@
 Trabalho 1 - Tópicos Especiais de Sistema
 
 Aluno 1: Daniel Henrique Marcos Rocha / RGM 37230255
+<br>
 Aluno 2: João Paulo Bertagia / RGM:37298135
 
 Exercícios:

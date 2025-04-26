@@ -327,7 +327,7 @@ class Program
             }
             else
             {
-                Console.WriteLine($"Parabéns! Você acertou o número {numeroSecreto} em {tentativas} tentativas! 🎉");
+                Console.WriteLine($"Parabéns! Você acertou o número {numeroSecreto} em {tentativas} tentativas!");
             }
         }
         Console.WriteLine("\nExercício 9 concluído!");

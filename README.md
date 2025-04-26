@@ -19,7 +19,7 @@ Para não gerarmos um arquivo por exercício, criamos uma estrutura de menu com 
 <b>Soma de Números Pares de um Array</b><br><br>
 <p style="text-align: left;">É solicitado ao usuário que informe 10 números, esses números são armazenados em um array, através de um while com condicional fazemos a verificação dos que são pares e ímpares, se o número for par, ele é armazenado e vai sendo somado com os demais pares. Ao final, informamos ao usuário qual a soma total dos números pares informados.</p>
 <b>Jogo da Adivinhação</b><br><br>
-<p style="text-align: left;">Exercício escolhido para Documentação Detalhada</p>
+<p style="text-align: left;">Exercício escolhido para Documentação Detalhada > <a href="https://github.com/jbertagia/AtividadeTES/blob/main/Documenta%C3%A7%C3%A3o%20Detalhada/Documentacao%20Detalhada%20Exercicio%2009.txt">CLIQUE AQUI</a></p>
 
 <hr>
 <h3>Realizados por Daniel:</h3>
@@ -33,5 +33,5 @@ Para não gerarmos um arquivo por exercício, criamos uma estrutura de menu com 
 <b>Cálculo de IMC com Classificação</b><br><br>
 <p style="text-align: left;">DESCRIÇÃO</p>
 <b>Lista de Tarefas (To-Do List)</b><br><br>
-<p style="text-align: left;">Exercício escolhido para Documentação Detalhada</p>
+<p style="text-align: left;">Exercício escolhido para Documentação Detalhada > <a href="https://github.com/jbertagia/AtividadeTES/blob/main/Documenta%C3%A7%C3%A3o%20Detalhada/Documentacao%20Detalhada%20Exercicio%2009.txt">CLIQUE AQUI</a></p></p>
 

@@ -33,7 +33,7 @@ Console.ReadLine() -> Comando para ler a entrada do usuário (palpites).
 int.Parse() -> Conversão da entrada do usuário de STRING para INT, para garantir que não seja um número quebrado
 tentativas++ -> Comando para incrementar tentativas realizadas até acerto.
 
-## Justificativas claras para a compreensão do método adotado
+# Justificativas claras para a compreensão do método adotado
 
 - Uso do RANDOM: 
 Usei o Random porque o número secreto precisava ser diferente toda vez que o jogo fosse iniciado. Assim, o desafio fica mais legal, já que ninguém sabe qual número vai ser.

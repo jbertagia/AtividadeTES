@@ -1,14 +1,115 @@
 # Documentação Detalhada - Exercício 10 <Lista de Tarefas (TO-DO list>
 
 # Passo a Passo Lógico para Resolução
+Foi solicitado a criacao de um sistema de lista de afazeres onde fosse possivel ter algumas interacoes 
+1.1 Adicionar tarefas
+1.2 Exibir tarefas
+1.3 Marcar como concluido as tarefas
+1.4 Encerrar
 
-# Estruturas e comandos utilizados
+Comecei entao criando uma lista para armazenar todas as tarefas que o usuario venha adicionar.
+Criei um swwtich case para ficar questionando ao usuario qual das 4 opcoes existentes ele deseja seguir (1.1, 1.2...)
 
-## Estruturas
+explicacao do CASE 1:
+Ao entrar no case e ele ja solicita para voce digitar as tarefas que tem para fazer e caso queira para de digitar e so digitar "fim" (ainda coloquei um implemento o toLower para que se o usario digitar alguma letra maiuscula o sistema compreenda) e apos isso criei um laco de repeticao que apos essa exibicao que e para realmente ficar digitando as tarefas ou fim para sair do case 1
 
-## Comandos
+explicando o CASE 2:
+ao entrar noi case ele imprime a frase "Lista de tarefas" e entra em um FORI para percorrer a lista imprimindo todos os itens dela.
 
-# Justificativas claras para a compreensão do método adotado
+explicando o CASE 3:
+esse e o mais "complicado" ele solicita qual tarefa voce deseja concluior atraves do numero que ela foi ou esta sendo exibida na lista, e para que o usuario nao precise digitar o indice corretamente ele digita o numero que aparece na lista e eu aplico um decremento para acessar o item correto.
+apos ja faz uma conferencia para ver se o numero indicado e maior que 0 e menor que o numero de itens existentes na lista caso nao seja ja apresenta uma mensagem de erro.
+se ele for um numero existente ja entra em outra verificao se o nome da tarefa ja tem um concluido adicionado antes ou se nao tem caso nao tenha ele vai adicionar o "[concluido]" na frente do nome da tarefa.
 
+explicando CASE 4:
+um case para encerrar o exercicio e continuar no menu de todos os 10 exercicios
 
+explicando DEFAULT:
+apenas um default falando que o codigo informado n existe
 
+CODIGO ABAIXO PARA FACILITAR VISUALIZACAO DA EXPLICACAO.
+
+    static void ExecutarExercicio10()
+    {
+        Console.WriteLine("\nExecutando Exercício 10...");
+        /*
+        10. Lista de Tarefas (To-Do List)
+        Permita que o usuário adicione tarefas a uma lista e, ao final, mostre todas as tarefas
+        inseridas. Use List<string> e ofereça uma opção para marcar tarefas como
+        concluídas.
+        */
+
+        // Lógica do exercício 10
+        List<string> tarefas = new List<string>();
+
+        bool continuar = true;
+        while (continuar)
+        {
+            Console.WriteLine("\nO que deseja fazer?");
+            Console.WriteLine("1- Adicionar tarefas.");
+            Console.WriteLine("2- Exibir tarefas.");
+            Console.WriteLine("3- Concluir tarefa.");
+            Console.WriteLine("4- Encerrar");
+            string decisao = Console.ReadLine();
+
+            switch (decisao)
+            {
+                case "1":
+                    Console.WriteLine("Digite suas tarefas (digite 'fim' para parar):");
+
+                    while (true)
+                    {
+                        Console.Write("Tarefa: ");
+                        string tarefa = Console.ReadLine();
+
+                        if (tarefa.ToLower() == "fim")
+                            break;
+
+                        tarefas.Add(tarefa);
+                    }
+                    Console.WriteLine("Tarefas adicionadas.");
+                    break;
+
+                case "2":
+                    Console.WriteLine("\nLista de tarefas:");
+                    for (int i = 0; i < tarefas.Count; i++)
+                    {
+                        Console.WriteLine($"{i + 1} - {tarefas[i]}");
+                    }
+                    break;
+
+                case "3":
+                    Console.WriteLine("\nDigite o número da tarefa que deseja marcar como concluída:");
+                    int numero = int.Parse(Console.ReadLine()) - 1;
+
+                    if (numero >= 0 && numero < tarefas.Count)
+                    {
+                        if (!tarefas[numero].StartsWith("[Concluído] "))
+                        {
+                            tarefas[numero] = "[Concluído] " + tarefas[numero];
+                            Console.WriteLine("Tarefa marcada como concluída!");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Essa tarefa já está concluída.");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Número inválido.");
+                    }
+                    break;
+
+                case "4":
+                    continuar = false;
+                    Console.WriteLine("Saindo do gerenciador de tarefas...");
+                    break;
+
+                default:
+                    Console.WriteLine("Opção inválida! Tente novamente.");
+                    break;
+            }
+        }
+
+        Console.WriteLine("\nExercício 10 concluído!");
+    }

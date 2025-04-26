@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Numerics; //necessário utilizar por conta do BigInteger do exercicio número 3
 
 class Program
@@ -147,6 +147,14 @@ class Program
         */
 
         // Lógica do exercício 2
+        Console.WriteLine("\nDigite o numero desejado para verificar a tabela do mesmo: ");
+        int n1 = int.Parse(Console.ReadLine());
+        Console.WriteLine("\n");
+
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine($"{n1} X {i} = {n1 * i}");
+        }
         Console.WriteLine("\nExercício 2 concluído!");
     }
 
@@ -193,6 +201,40 @@ class Program
         */
 
         // Lógica do exercício 4
+        bool continuar = true;
+
+        while (continuar)
+        {
+            Console.WriteLine("1 - Celsius para Fahrenheit");
+            Console.WriteLine("2 - Fahrenheit para Celsius");
+            Console.WriteLine("3 - Sair");
+
+            Console.WriteLine("\nDigite a opção desejada: ");
+            int escolha = int.Parse(Console.ReadLine());
+
+            switch (escolha)
+            {
+                case 1:
+                    Console.WriteLine("Digite a temperatura em Graus Celsius: ");
+                    float celsius = float.Parse(Console.ReadLine());
+                    float calculo1 = (celsius * 9f / 5f) + 32;
+                    Console.WriteLine($"A temperatura de {celsius}°C em Fahrenheit {calculo1}°F \n");
+                    break;
+                case 2:
+                    Console.WriteLine("Digite a temperatura em Graus Fahrenheit: ");
+                    float fahrenheit = float.Parse(Console.ReadLine());
+                    float calculo2 = (5f / 9f) * (fahrenheit - 32);
+                    Console.WriteLine($"A temperatura de {fahrenheit}°F em Celsius {calculo2}°C \n");
+                    break;
+                case 3:
+                    Console.WriteLine("Saindo de conversor...");
+                    continuar = false;
+                    break;
+                default:
+                    Console.WriteLine("\nErro numero informado inexistente");
+                    break;
+            }
+        }
         Console.WriteLine("\nExercício 4 concluído!");
     }
 
@@ -230,6 +272,25 @@ class Program
         Console.WriteLine("\nExercício 5 concluído!");
     }
 
+    //Classe para o exercicio 06 dos produtos
+    public class Produto
+    {
+        public string Nome { get; set; }
+        public float Preco { get; set; }
+        public int Quantidade { get; set; }
+
+        public Produto(string nome, float preco, int quantidade)
+        {
+            Nome = nome;
+            Preco = preco;
+            Quantidade = quantidade;
+        }
+
+        public float valorTotal()
+        {
+            return Quantidade * Preco;
+        }
+    }
     static void ExecutarExercicio6()
     {
         Console.WriteLine("\nExecutando Exercício 6...");
@@ -241,6 +302,35 @@ class Program
         */
 
         // Lógica do exercício 6
+        List<Produto> produtos = new List<Produto>(); // Criação da lista!
+
+        for (int i = 1; i <= 3; i++)
+        {
+            Console.WriteLine($"\nCadastro do produto {i}:");
+
+            Console.Write("Nome: ");
+            string nome = Console.ReadLine();
+
+            Console.Write("Preço: ");
+            float preco = float.Parse(Console.ReadLine());
+
+            Console.Write("Quantidade: ");
+            int quantidade = int.Parse(Console.ReadLine());
+
+            Produto produto = new Produto(nome, preco, quantidade);
+            produtos.Add(produto);
+        }
+
+        Console.WriteLine("\nProdutos cadastrados:");
+
+        foreach (Produto p in produtos)
+        {
+            Console.WriteLine($"Nome: {p.Nome}");
+            Console.WriteLine($"Preço: R$ {p.Preco:F2}");
+            Console.WriteLine($"Quantidade: {p.Quantidade}");
+            Console.WriteLine($"Valor total no estoque: R$ {p.valorTotal():F2}\n");
+        }
+
         Console.WriteLine("\nExercício 6 concluído!");
     }
 
@@ -291,7 +381,23 @@ class Program
         */
 
         // Lógica do exercício 8
-        Console.WriteLine("\nExercício 8 concluído!");
+        Console.Write("Digite o seu peso: ");
+        float peso = float.Parse(Console.ReadLine());
+        Console.Write("Digite a sua altura: ");
+        float altura = float.Parse(Console.ReadLine());
+
+        float imc = peso / (altura * altura);
+        string classificacao = "";
+
+        if (imc < 18.5) classificacao = "Abaixo do peso";
+        else if (imc > 18.5 && imc < 24.9) classificacao = "Com o Peso normal";
+        else if (imc > 25 && imc < 29.9) classificacao = "Sobrepeso";
+        else classificacao = "Com Obesidade";
+
+        Console.Write($"\nSeu IMC = {imc} \nE voce está {classificacao}");
+
+
+        Console.WriteLine("\n\nExercício 8 concluído!");
     }
 
     static void ExecutarExercicio9()
@@ -344,6 +450,77 @@ class Program
         */
 
         // Lógica do exercício 10
+        List<string> tarefas = new List<string>();
+
+        bool continuar = true;
+        while (continuar)
+        {
+            Console.WriteLine("\nO que deseja fazer?");
+            Console.WriteLine("1- Adicionar tarefas.");
+            Console.WriteLine("2- Exibir tarefas.");
+            Console.WriteLine("3- Concluir tarefa.");
+            Console.WriteLine("4- Encerrar");
+            string decisao = Console.ReadLine();
+
+            switch (decisao)
+            {
+                case "1":
+                    Console.WriteLine("Digite suas tarefas (digite 'fim' para parar):");
+
+                    while (true)
+                    {
+                        Console.Write("Tarefa: ");
+                        string tarefa = Console.ReadLine();
+
+                        if (tarefa.ToLower() == "fim")
+                            break;
+
+                        tarefas.Add(tarefa);
+                    }
+                    Console.WriteLine("Tarefas adicionadas.");
+                    break;
+
+                case "2":
+                    Console.WriteLine("\nLista de tarefas:");
+                    for (int i = 0; i < tarefas.Count; i++)
+                    {
+                        Console.WriteLine($"{i + 1} - {tarefas[i]}");
+                    }
+                    break;
+
+                case "3":
+                    Console.WriteLine("\nDigite o número da tarefa que deseja marcar como concluída:");
+                    int numero = int.Parse(Console.ReadLine()) - 1;
+
+                    if (numero >= 0 && numero < tarefas.Count)
+                    {
+                        if (!tarefas[numero].StartsWith("[Concluído] "))
+                        {
+                            tarefas[numero] = "[Concluído] " + tarefas[numero];
+                            Console.WriteLine("Tarefa marcada como concluída!");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Essa tarefa já está concluída.");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Número inválido.");
+                    }
+                    break;
+
+                case "4":
+                    continuar = false;
+                    Console.WriteLine("Saindo do gerenciador de tarefas...");
+                    break;
+
+                default:
+                    Console.WriteLine("Opção inválida! Tente novamente.");
+                    break;
+            }
+        }
+
         Console.WriteLine("\nExercício 10 concluído!");
     }
 }

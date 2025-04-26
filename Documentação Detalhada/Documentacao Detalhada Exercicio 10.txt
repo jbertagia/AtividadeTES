@@ -1,0 +1,14 @@
+# Documentação Detalhada - Exercício 10 <Lista de Tarefas (TO-DO list>
+
+# Passo a Passo Lógico para Resolução
+
+# Estruturas e comandos utilizados
+
+## Estruturas
+
+## Comandos
+
+# Justificativas claras para a compreensão do método adotado
+
+
+

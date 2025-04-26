@@ -1,0 +1,14 @@
+C:\Users\jbert\OneDrive\Área de Trabalho\UP\05 - 3 Semestre\03 - Topicos Especiais de Sistema\Trabalho\ExerciciosTrabalho\bin\Debug\net9.0\ExerciciosTrabalho.exe
+C:\Users\jbert\OneDrive\Área de Trabalho\UP\05 - 3 Semestre\03 - Topicos Especiais de Sistema\Trabalho\ExerciciosTrabalho\bin\Debug\net9.0\ExerciciosTrabalho.deps.json
+C:\Users\jbert\OneDrive\Área de Trabalho\UP\05 - 3 Semestre\03 - Topicos Especiais de Sistema\Trabalho\ExerciciosTrabalho\bin\Debug\net9.0\ExerciciosTrabalho.runtimeconfig.json
+C:\Users\jbert\OneDrive\Área de Trabalho\UP\05 - 3 Semestre\03 - Topicos Especiais de Sistema\Trabalho\ExerciciosTrabalho\bin\Debug\net9.0\ExerciciosTrabalho.dll
+C:\Users\jbert\OneDrive\Área de Trabalho\UP\05 - 3 Semestre\03 - Topicos Especiais de Sistema\Trabalho\ExerciciosTrabalho\bin\Debug\net9.0\ExerciciosTrabalho.pdb
+C:\Users\jbert\OneDrive\Área de Trabalho\UP\05 - 3 Semestre\03 - Topicos Especiais de Sistema\Trabalho\ExerciciosTrabalho\obj\Debug\net9.0\ExerciciosTrabalho.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jbert\OneDrive\Área de Trabalho\UP\05 - 3 Semestre\03 - Topicos Especiais de Sistema\Trabalho\ExerciciosTrabalho\obj\Debug\net9.0\ExerciciosTrabalho.AssemblyInfoInputs.cache
+C:\Users\jbert\OneDrive\Área de Trabalho\UP\05 - 3 Semestre\03 - Topicos Especiais de Sistema\Trabalho\ExerciciosTrabalho\obj\Debug\net9.0\ExerciciosTrabalho.AssemblyInfo.cs
+C:\Users\jbert\OneDrive\Área de Trabalho\UP\05 - 3 Semestre\03 - Topicos Especiais de Sistema\Trabalho\ExerciciosTrabalho\obj\Debug\net9.0\ExerciciosTrabalho.csproj.CoreCompileInputs.cache
+C:\Users\jbert\OneDrive\Área de Trabalho\UP\05 - 3 Semestre\03 - Topicos Especiais de Sistema\Trabalho\ExerciciosTrabalho\obj\Debug\net9.0\ExerciciosTrabalho.dll
+C:\Users\jbert\OneDrive\Área de Trabalho\UP\05 - 3 Semestre\03 - Topicos Especiais de Sistema\Trabalho\ExerciciosTrabalho\obj\Debug\net9.0\refint\ExerciciosTrabalho.dll
+C:\Users\jbert\OneDrive\Área de Trabalho\UP\05 - 3 Semestre\03 - Topicos Especiais de Sistema\Trabalho\ExerciciosTrabalho\obj\Debug\net9.0\ExerciciosTrabalho.pdb
+C:\Users\jbert\OneDrive\Área de Trabalho\UP\05 - 3 Semestre\03 - Topicos Especiais de Sistema\Trabalho\ExerciciosTrabalho\obj\Debug\net9.0\ExerciciosTrabalho.genruntimeconfig.cache
+C:\Users\jbert\OneDrive\Área de Trabalho\UP\05 - 3 Semestre\03 - Topicos Especiais de Sistema\Trabalho\ExerciciosTrabalho\obj\Debug\net9.0\ref\ExerciciosTrabalho.dll

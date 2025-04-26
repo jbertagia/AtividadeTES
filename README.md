@@ -33,5 +33,4 @@ Para não gerarmos um arquivo por exercício, criamos uma estrutura de menu com 
 <b>Cálculo de IMC com Classificação</b><br><br>
 <p style="text-align: left;">DESCRIÇÃO</p>
 <b>Lista de Tarefas (To-Do List)</b><br><br>
-<p style="text-align: left;">Exercício escolhido para Documentação Detalhada > <a href="https://github.com/jbertagia/AtividadeTES/blob/main/Documenta%C3%A7%C3%A3o%20Detalhada/Documentacao%20Detalhada%20Exercicio%2009.txt">CLIQUE AQUI</a></p></p>
-
+<p style="text-align: left;">Exercício escolhido para Documentação Detalhada > <a href="https://github.com/jbertagia/AtividadeTES/blob/main/Documenta%C3%A7%C3%A3o%20Detalhada/Documentacao%20Detalhada%20Exercicio%2010.txt">CLIQUE AQUI</a></p></p>

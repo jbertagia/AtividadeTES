@@ -1,0 +1,57 @@
+# Documentação Detalhada - Exercício 9 <Jogo da Adivinhação>
+
+# Passo a Passo Lógico para Resolução
+
+1.0 Criação das variáveis
+1.1 Criamos a variavel NUMEROSECRETO, gerando aleatoriamente um número entre 1 e 100, com o método random.Next(1, 101), esse será o número a ser adivinhado.
+1.2 Criamos uma variavel chamada TENTATIVAS, incializada com 0 e que irá servir para contar quantas tentativas o usuário precisou para acertar o número.
+1.3 Criamos uma variável chamada PALPITA, que irá receber o palpite do usuário.
+2.0 Mensagem inicial ao usuário, explicando o jogo.
+2.1 Exibimos para o usuário uma mensagem inicial e solicitamos que informe um número de 1 a 100.
+3.0 Estrutura de repetição 
+3.1 Utilizando a estrutura WHILE, iniciamos a solicitar o palpite do usuário, tendo a condição de saída o acerto do número.
+3.2 Solictamos o palpite do usuário, e é armazenado na variavel PALPITE, na leitura é convertido para um número inteiro utilizando o int.Parse(Console.ReadLine()), para garantir que não seja feita a validação com um número quebrado.
+3.3 Após receber o palmite, realizamos um incremento na variável TENTATIVAS.
+3.4 Utilizando a condicional IF/ELSEIF realizamos a validação se o número informado é igual, maior ou menor que o número gerado aleatoriamente.
+3.5 Caso seja maior, printa a mensagem "O número secreto é maior! >" e solicita novo palpite.
+3.6 Caso seja menor, printa a mensagem "O número secreto é menor! <" e solicita novo palpite.
+3.7 Caso seja igual, printa a mensagem $"Parabéns! Você acertou o número {numeroSecreto} em {tentativas} tentativas!" onde parabenizamos pelo acerto e informamos o número secreto e quantas tentativas o usuáio precisou para acertar.
+
+# Estruturas e comandos utilizados
+
+## Estruturas
+
+while -> Utilizado para realizar o loop, pedindo os palpites do usuário enquanto não acerta o número.
+if-else -> Utilizado para comparar se o palpite era maior, menor ou igual e realizando uma ação de acordo com essa validação.
+
+## Comandos
+
+Random random = new Random() -> Comando para criar o objeto Rondom para gerar números aleatórios.
+random.Next(1.100) -> Comando para gerar um número aleatório entre 1 e 100.
+Console.WriteLine() -> Comando para exibir mensagens para o usuário. (Informar sobre o jogo e solicitar palpites).
+Console.ReadLine() -> Comando para ler a entrada do usuário (palpites).
+int.Parse() -> Conversão da entrada do usuário de STRING para INT, para garantir que não seja um número quebrado
+tentativas++ -> Comando para incrementar tentativas realizadas até acerto.
+
+## Justificativas claras para a compreensão do método adotado
+
+- Uso do RANDOM: 
+Usei o Random porque o número secreto precisava ser diferente toda vez que o jogo fosse iniciado. Assim, o desafio fica mais legal, já que ninguém sabe qual número vai ser.
+
+- Estrutura while: 
+Escolhi o while pois precisamos de um loop até atingir a condição de acerto. Optei pelo while pois no seu início já passamos a condição de finalização, poderia ter usado um do while também, porém como a condição fica no final da estrutura, por questão de gosto mesmo prefiro o while.
+
+- Estrutura if-else: 
+Escolhi o if-else porque não quero testar valores exatos, que seria o caso do switch, utilizado no menu inicial dos exercícios por exemplo.
+
+- Contagem de Tentativas:
+Com a variavel tentativas utilizei um incremento para no final mostrar para o usuário se ele foi rápido ou demorou pra descobrir o numero.
+
+- Interação com o Usuário: 
+O programa pede o número pro usuário. A cada jogada o usuário participa ativamente, e o jogo só para quando ele acerta.
+
+- Mensagens de Feedback: 
+Depois de cada palpite, printo um retorno pro usuário para que o jogo seja bem claro e dinâmico a cada interação. Quando o usuário acerta, dou uma mensagem parabenizando e encerramos o jogo.
+
+
+
